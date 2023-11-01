@@ -48,7 +48,7 @@ export default function Verification({ navigation }) {
           <View style={styles.registerContainer}>
             <Text style={styles.registerText}>Don't have receive yet?</Text>
             <Text
-              style={styles.registerLink}
+              style={styles.resendLink}
               onPress={() => navigation.navigate('Register')}
             >
               Resend
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
   registerText: {
     color: 'white',
   },
-  registerLink: {
+  resendLink: {
     color: '#A827FE',
     textDecorationLine: 'underline',
     // right: wp('8%')
