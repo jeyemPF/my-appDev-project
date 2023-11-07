@@ -23,9 +23,9 @@ const styles = StyleSheet.create({
   
     sectionContainer: {
       justifyContent: "flex-start",
-      // gap: hp('1%'),   
+      gap: hp('1%'),   
   
-      // backgroundColor: 'red',
+
     },
   
     // header
@@ -257,8 +257,8 @@ const styles = StyleSheet.create({
       flexDirection: "column",
       // height: Platform.OS === "android" ? 140 : 160,
       // width: Platform.OS === "android" ? 260 : 300,
-      height: Platform.OS === 'android' ? hp('19%') : hp('19%'), // Adjust the percentages as needed
-    width: Platform.OS === 'android' ? wp('78%') : wp('70%'), // Adjust the percentages as needed
+      height: Platform.OS === 'android' ? hp('19%') : hp('19%'), 
+    width: Platform.OS === 'android' ? wp('78%') : wp('70%'), 
     },
  
     // Reccomend Section

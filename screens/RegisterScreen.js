@@ -14,7 +14,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function LoginScreen({ navigation }) {
   const [email, setEmail] = useState('');
-  const [userName, setUsername] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
 
 
   const handleNextPress = () => {
@@ -24,7 +25,7 @@ export default function LoginScreen({ navigation }) {
   return (
 
     <KeyboardAvoidingView
-  behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+  behavior={Platform.OS === 'android' ? 'padding' : 'height'}
   style={styles.container}>
  <SafeAreaView>
    <Image source={require('../assets/myLogo.png')} style={styles.image} />
@@ -33,7 +34,26 @@ export default function LoginScreen({ navigation }) {
         <Text style={styles.title}>Register</Text>
         <Text style={styles.subtitle}>Please fill out the information below to register</Text>
 
+     
         <TextInput
+            style={styles.loginInput}
+            placeholder="Enter your FirstName"
+            placeholderTextColor="#B8B2BB"
+            onChangeText={setFirstName}
+            value={firstName}
+            autoComplete="off"  
+            keyboardType="default"
+        />
+          <TextInput
+            style={styles.loginInput}
+            placeholder="Enter your FirstName"
+            placeholderTextColor="#B8B2BB"
+            onChangeText={setLastName}
+            value={lastName}
+            autoComplete="off"  
+            keyboardType="default"
+        />
+           <TextInput
             style={styles.loginInput}
             placeholder="Enter your Email Address"
             placeholderTextColor="#B8B2BB"
@@ -42,15 +62,8 @@ export default function LoginScreen({ navigation }) {
             autoComplete="off"  
             keyboardType="email-address"
         />
-        <TextInput
-            style={styles.loginInput}
-            placeholder="Enter your Username"
-            placeholderTextColor="#B8B2BB"
-            onChangeText={setUsername}
-            value={userName}
-            autoComplete="off"  
-            keyboardType="default"
-        />
+       
+
 
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.loginButton} onPress={handleNextPress}>

@@ -20,12 +20,17 @@ import styles from "../styles/HomeScreenStyles";
 
 
 
+
 export default function HomePage({ navigation }){
 
   const [isLiked, setIsLiked] = useState(false);
 
   const handleIconClick = () => {
     setIsLiked(!isLiked);
+  };
+  const handleImagePress = () => {
+
+    navigation.navigate('Profile'); 
   };
 
     return (
@@ -45,10 +50,12 @@ export default function HomePage({ navigation }){
               <Text style={styles.welcomeText}> Welcome Back User!</Text>
               <Text style={styles.userNameText}> Grex Martin</Text>
             </View>
-            <Image
-             source={require("../assets/man-header.png")}
-              style={styles.image}
-            />
+            <TouchableOpacity onPress={handleImagePress}>
+        <Image
+          source={require('../assets/man-header.png')}
+          style={styles.image}
+        />
+      </TouchableOpacity>
           </View>
 
           {/* Section Container */}

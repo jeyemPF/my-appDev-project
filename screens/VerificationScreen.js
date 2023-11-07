@@ -22,7 +22,7 @@ export default function Verification({ navigation }) {
   return (
 
     <KeyboardAvoidingView
-  behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+  behavior={Platform.OS === 'android' ? 'padding' : 'height'}
   style={styles.container}>
  <SafeAreaView>
    <Image source={require('../assets/myLogo.png')} style={styles.image} />

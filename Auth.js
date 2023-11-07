@@ -5,8 +5,8 @@ import HomePage from './screens/HomePage';
 import Organizer from './screens/Organizer';
 import Bookings from './screens/Bookings';
 import Profile from './screens/Profile';
+import ChatScreen from './screens/ChatScreen';
 
-import DetailsScreen, { DetailScreen } from './screens/DetailScreen'
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -46,12 +46,14 @@ function HomeScreen() {
       tabBarStyle: { 
 
        
-        borderTopColor:'#1B0A2A',
-          backgroundColor:'#1B0A2A',
+        borderTopColor:'#130224',
+          backgroundColor:'#130224',
+     
+          
     },
     
     tabBarLabelStyle: {
-          fontSize: 10  ,
+          fontSize: 8.5  ,
         },  
     }}
   >
@@ -63,7 +65,7 @@ function HomeScreen() {
           tabBarIcon: ({ size, color }) => (
             <FontAwesome5
               name='home'
-              size={20}
+              size={18}
               color={color}
             />
           ),
@@ -78,7 +80,7 @@ function HomeScreen() {
           tabBarIcon: ({ size, color }) => (
             <FontAwesome5
               name='users'
-              size={20}
+              size={18}
               color={color}
             />
           ),
@@ -93,7 +95,21 @@ function HomeScreen() {
           tabBarIcon: ({ size, color }) => (
             <FontAwesome5
               name='book'
-              size={20}
+              size={18}
+              color={color}
+            />
+          ),
+        }}
+      />
+        <Tab.Screen
+        name="Chat"
+        component={ChatScreen}
+        options={{
+          title: 'Chat',
+          tabBarIcon: ({ size, color }) => (
+            <FontAwesome5
+              name='envelope'
+              size={18}
               color={color}
             />
           ),
@@ -107,7 +123,7 @@ function HomeScreen() {
           tabBarIcon: ({ size, color }) => (
             <FontAwesome5
               name='user'
-              size={20}
+              size={18}
               color={color}
             />
           ),
