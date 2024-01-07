@@ -8,6 +8,7 @@ const Tab1Screen = () => {
     <View style={{ backgroundColor: COLORS.DARK_VIOLET, flex: 1 }}>
     <View style={{justifyContent: 'center', alignItems: 'center', top: hp('25%')}}>
         <Text style={{  color: '#ddd', }}>You haven't posted yet in this app</Text>
+ 
     </View>
 </View>
   )

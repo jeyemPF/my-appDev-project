@@ -16,6 +16,7 @@ import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
 
 import VerificationScreen from './screens/VerificationScreen';
+import PersonScreen from './screens/chatscreen/PersonScreen';
 
 
 
@@ -35,22 +36,13 @@ function HomeScreen() {
     <Tab.Navigator
     initialRouteName='Home'
     screenOptions={{
-
-      headerShown: false,
-      
+      headerShown: false, 
       tabBarActiveTintColor: '#A827FE',
       tabBarInactiveTintColor: '#8c8787',
-      
-
-      
       tabBarStyle: { 
-
-       
-        borderTopColor:'#130224',
+          borderTopColor:'#130224',
           backgroundColor:'#130224',
-     
-          
-    },
+      },
     
     tabBarLabelStyle: {
           fontSize: 8.5  ,
@@ -150,6 +142,7 @@ function Auth(props) {
         <Stack.Screen name="Verification" component={VerificationScreen} />
         <Stack.Screen name="Register" component={RegisterScreen} />
         <Stack.Screen name="HomePage" component={HomeScreen} />
+        <Stack.Screen name="PersonScreen" component={PersonScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

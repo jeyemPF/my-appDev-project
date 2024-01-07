@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
 
   textHeader: {
     color: 'white',
-    fontSize: hp("6%"),
+    fontSize: hp("4.5%"),
   },
   textSpan:{
     color: '#A827FE',

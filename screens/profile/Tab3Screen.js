@@ -7,7 +7,7 @@ const Tab1Screen = () => {
   return (
     <View style={{ backgroundColor: COLORS.DARK_VIOLET, flex: 1 }}>
         <View style={{justifyContent: 'center', alignItems: 'center', top: hp('25%')}}>
-            <Text style={{  color: 'white', }}>POgi mo</Text>
+            <Text style={{  color: 'white', }}>Pogi mo</Text>
         </View>
     </View>
   )

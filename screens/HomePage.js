@@ -14,6 +14,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
 import styles from "../styles/HomeScreenStyles";
+import PEOPLE from "../src/PEOPLE";
 
 
 
@@ -176,12 +177,12 @@ export default function HomePage({ navigation }){
                         <Text style={styles.eventsTextInside}>Musicfest</Text>
                         <View style={styles.eventsTextInsides}>
                           <Image
-                            source={require("../assets/man-header.png")}
+                            source={require("../assets/img/people/jeline-mendez.jpg")}
                             style={styles.imageEventsProfile}
                           />
                           <Text style={styles.eventsNameText}>
                             {" "}
-                            Grex Martin
+                           Jeline Mendez
                           </Text>
                         </View>
                       </View>
@@ -190,7 +191,7 @@ export default function HomePage({ navigation }){
                     <View style={styles.buttonPositionEvents}>
                       <TouchableOpacity
                         style={styles.buttonEvents}
-                        onPress={() => navigation.navigate("Welcome")}
+                        onPress={() => navigation.navigate("Bookings")}
                       >
                         <Text style={styles.buttonTextEvent}>Book Now</Text>
                       </TouchableOpacity>
@@ -227,7 +228,7 @@ export default function HomePage({ navigation }){
                     <View style={styles.buttonPositionEvents}>
                       <TouchableOpacity
                         style={styles.buttonEvents}
-                        onPress={() => navigation.navigate("Welcome")}
+                        onPress={() => navigation.navigate("Bookings")}
                       >
                         <Text style={styles.buttonTextEvent}>Book Now</Text>
                       </TouchableOpacity>
@@ -265,7 +266,7 @@ export default function HomePage({ navigation }){
                     <View style={styles.buttonPositionEvents}>
                       <TouchableOpacity
                         style={styles.buttonEvents}
-                        onPress={() => navigation.navigate("Welcome")}
+                        onPress={() => navigation.navigate("Bookings")}
                       >
                         <Text style={styles.buttonTextEvent}>Book Now</Text>
                       </TouchableOpacity>
@@ -303,7 +304,7 @@ export default function HomePage({ navigation }){
                     <View style={styles.buttonPositionEvents}>
                       <TouchableOpacity
                         style={styles.buttonEvents}
-                        onPress={() => navigation.navigate("Welcome")}
+                        onPress={() => navigation.navigate("Bookings")}
                       >
                         <Text style={styles.buttonTextEvent}>Book Now</Text>
                       </TouchableOpacity>
@@ -342,7 +343,7 @@ export default function HomePage({ navigation }){
                     <View style={styles.buttonPositionEvents}>
                       <TouchableOpacity
                         style={styles.buttonEvents}
-                        onPress={() => navigation.navigate("Welcome")}
+                        onPress={() => navigation.navigate("Bookings")}
                       >
                         <Text style={styles.buttonTextEvent}>Book Now</Text>
                       </TouchableOpacity>
@@ -379,7 +380,7 @@ export default function HomePage({ navigation }){
                     <View style={styles.buttonPositionEvents}>
                       <TouchableOpacity
                         style={styles.buttonEvents}
-                        onPress={() => navigation.navigate("Welcome")}
+                        onPress={() => navigation.navigate("Bookings")}
                       >
                         <Text style={styles.buttonTextEvent}>Book Now</Text>
                       </TouchableOpacity>
@@ -418,7 +419,7 @@ export default function HomePage({ navigation }){
                     <View style={styles.buttonPositionEvents}>
                       <TouchableOpacity
                         style={styles.buttonEvents}
-                        onPress={() => navigation.navigate("Welcome")}
+                        onPress={() => navigation.navigate("Bookings")}
                       >
                         <Text style={styles.buttonTextEvent}>Book Now</Text>
                       </TouchableOpacity>
@@ -457,7 +458,7 @@ export default function HomePage({ navigation }){
                     <View style={styles.buttonPositionEvents}>
                       <TouchableOpacity
                         style={styles.buttonEvents}
-                        onPress={() => navigation.navigate("Welcome")}
+                        onPress={() => navigation.navigate("Bookings")}
                       >
                         <Text style={styles.buttonTextEvent}>Book Now</Text>
                       </TouchableOpacity>
@@ -487,12 +488,12 @@ export default function HomePage({ navigation }){
                         <Text style={styles.recommendsTextInside}>New Year</Text>
                         <View style={styles.recommendsTextInsides}>
                           <Image
-                            source={require("../assets/man-header.png")}
+                            source={require("../assets/img/people/ryan-williams.jpg")}
                             style={styles.imageRecommendsProfile}
                           />
                           <Text style={styles.recommendsNameText}>
                             {" "}
-                            Grex Martin
+                            Ryan Williams
                           </Text>
                         </View>
                       </View>
@@ -501,7 +502,7 @@ export default function HomePage({ navigation }){
                     <View style={styles.buttonPositionRecommends}>
                       <TouchableOpacity
                         style={styles.buttonRecommends}
-                        onPress={() => navigation.navigate("Welcome")}
+                        onPress={() => navigation.navigate("Bookings")}
                       >
                         <Text style={styles.buttonTextRecommends}>Book Now</Text>
                       </TouchableOpacity>

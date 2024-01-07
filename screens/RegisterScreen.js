@@ -62,7 +62,7 @@ export default function LoginScreen({ navigation }) {
             autoComplete="off"  
             keyboardType="email-address"
         />
-       
+    
 
 
         <View style={styles.buttonContainer}>

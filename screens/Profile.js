@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, SafeAreaView, StyleSheet, Image, TouchableOpacity, Text, Platform,StatusBar } from 'react-native';
+import { View, SafeAreaView, Image, TouchableOpacity, Text, Platform,StatusBar } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { NavigationContainer } from '@react-navigation/native';
